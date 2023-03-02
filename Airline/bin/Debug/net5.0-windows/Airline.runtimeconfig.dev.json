@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\sitka\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sitka\\.nuget\\packages"
+    ]
+  }
+}

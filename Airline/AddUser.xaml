@@ -1,0 +1,43 @@
+﻿<Window x:Class="Airline.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airline"
+        mc:Ignorable="d"
+        Title="Add user" Height="450" Width="800" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Email address" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" FontSize="20px" VerticalAlignment="Center" Margin="100 0 0 0"/>
+        <TextBlock Text="First name" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" FontSize="20px" VerticalAlignment="Center" Margin="100 0 0 0"/>
+        <TextBlock Text="Last name" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" FontSize="20px" VerticalAlignment="Center" Margin="100 0 0 0"/>
+        <TextBlock Text="Office" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" FontSize="20px" VerticalAlignment="Center" Margin="100 0 0 0"/>
+        <TextBlock Text="Birthdate" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" FontSize="20px" VerticalAlignment="Center" Margin="100 0 0 0"/>
+        <TextBlock Text="Password" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" FontSize="20px" VerticalAlignment="Center" Margin="100 0 0 0"/>
+
+        <TextBox Name="txtEmail" Grid.Column="1" Grid.Row="0" Margin="20 20 140 20" BorderBrush="Black"/>
+        <TextBox Name="txtFirstName" Grid.Column="1" Grid.Row="1" Margin="20 20 140 20" BorderBrush="Black"/>
+        <TextBox Name="txtLastName" Grid.Column="1" Grid.Row="2" Margin="20 20 140 20" BorderBrush="Black"/>
+        <ComboBox Name="cbOffice" Grid.Column="1" Grid.Row="3" Margin="20 20 140 20" BorderBrush="Black" VerticalAlignment="Center"/>
+        <TextBox Name="txtBirthDate" Grid.Column="1" Grid.Row="4" Margin="20 20 140 20" BorderBrush="Black"/>
+        <PasswordBox Name="txtPassword" Grid.Column="1" Grid.Row="5" Margin="20 20 140 20" BorderBrush="Black"/>
+
+        <Button Name="btnSave" Content="Save" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" Margin="150 20 450 20" Click="btnSave_Click"/>
+        <Button Name="btnCance" Content="Cancel" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" Margin="450 20 150 20" Click="btnCance_Click"/>
+
+    </Grid>
+</Window>
